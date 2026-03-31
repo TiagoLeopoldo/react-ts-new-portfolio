@@ -1,0 +1,151 @@
+:root {
+  /* Colors */
+  --background: #09090b;
+  --surface: #18181b;
+  --surface-hover: #27272a;
+  --primary: #fafafa;
+  --secondary: #a1a1aa;
+  --accent: #3b82f6;
+  --accent-hover: #2563eb;
+  --border: #27272a;
+  --border-hover: #3f3f46;
+
+  /* Spacing */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 1rem;
+  --space-4: 1.5rem;
+  --space-5: 2.5rem; /* Slightly more breathing room */
+  --space-6: 3.5rem;
+  --space-8: 4.5rem;
+  --space-10: 7rem;
+  --space-12: 8rem;
+  --space-16: 10rem;
+
+  /* Radius */
+  --radius-sm: 0.4rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1rem;
+  --radius-full: 9999px;
+
+  /* Shadows */
+  --shadow-premium: 0 20px 40px -20px rgba(0, 0, 0, 0.9);
+
+  /* Typography Scale */
+  --text-xs: 0.75rem;
+  --text-sm: 0.8125rem;
+  --text-base: 0.9375rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 2.5rem;
+  --text-4xl: 4.5rem;
+
+  --font-base: "Inter", "Open Sans", sans-serif;
+  --font-title: "Neue Machina", sans-serif;
+
+  /* Transitions - Faster and Snappier */
+  --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-base: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-margin-top: 5rem; /* Ajuste para compensar a Navbar fixa */
+}
+
+@font-face {
+  font-family: 'Neue Machina';
+  src: url('../src/assets/fonts/NeueMachina-Regular.otf');
+}
+
+
+
+body {
+  background-color: var(--background);
+  color: var(--primary);
+  font-family: var(--font-base);
+  line-height: 1.7; /* Better reading comfort */
+  font-size: var(--text-base);
+  letter-spacing: -0.01em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  text-decoration: none;
+  color: var(--accent);
+  transition: all var(--transition-fast);
+}
+
+a:hover {
+  color: var(--accent-hover);
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-title);
+  color: var(--primary);
+  line-height: 1.1;
+  letter-spacing: -0.04em; /* Impactful, modern feel */
+}
+
+p {
+  color: var(--secondary);
+  margin-bottom: var(--space-4);
+}
+
+ul {
+  list-style: none;
+}
+
+/* =============================================
+   FADE-IN SUAVE — Animação de entrada CSS pura
+   Sem JS, sem IntersectionObserver, sem lock
+   ============================================= */
+
+@keyframes fadeSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-section {
+  animation: fadeSlideIn 0.6s cubic-bezier(0.4, 0, 0.2, 1) both;
+}
+
+/* Escalonar a entrada de cada seção */
+.fade-in-section:nth-child(1) { animation-delay: 0.0s; }
+.fade-in-section:nth-child(2) { animation-delay: 0.1s; }
+.fade-in-section:nth-child(3) { animation-delay: 0.15s; }
+.fade-in-section:nth-child(4) { animation-delay: 0.2s; }
+.fade-in-section:nth-child(5) { animation-delay: 0.25s; }
+.fade-in-section:nth-child(6) { animation-delay: 0.3s; }
+
+/* Acessibilidade: respeitar prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .fade-in-section {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* Estados de Loading e Erro */
+.loading-state,
+.error-state {
+  padding: var(--space-8);
+  text-align: center;
+  color: var(--secondary);
+}
+
