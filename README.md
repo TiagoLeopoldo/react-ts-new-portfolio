@@ -1,73 +1,105 @@
-# React + TypeScript + Vite
+# Portfólio Tiago de Noronha Leopoldo
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Build Status](https://img.shields.io/badge/build-passing-brightgreen)
+![Version](https://img.shields.io/badge/version-1.0.0-blue)
+![License](https://img.shields.io/badge/license-MIT-green)
 
-Currently, two official plugins are available:
+## Descrição
+Este é o portfólio pessoal de Tiago de Noronha Leopoldo, desenvolvido para apresentar projetos, habilidades e experiências de forma profissional e atrativa. O projeto utiliza o conceito de Atomic Design para organizar os componentes e garantir escalabilidade.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## Demonstração Visual
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Esboço do Planejamento Inicial
+![Esboço do Planejamento](./docs/atomic-design-planning.png)
 
-## Expanding the ESLint configuration
+### Resultado Atual
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+#### Versão Desktop
+![Versão Desktop](./docs/large.png)
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+#### Versão Mobile
+Menu Aberto:
+![Menu Aberto](./docs/small-menu-open.png)
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+Menu Fechado:
+![Menu Fechado](./docs/small-menu-closed.png)
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+---
+
+## Instalação e Execução
+
+Siga os passos abaixo para rodar o projeto localmente:
+
+1. **Clone o repositório:**
+   ```bash
+   git clone https://github.com/TiagoLeopoldo/react-ts-new-portfolio.git
+   ```
+
+2. **Instale as dependências:**
+   ```bash
+   npm install
+   ```
+
+3. **Inicie o servidor de desenvolvimento:**
+   ```bash
+   npm run dev
+   ```
+
+4. **Acesse a aplicação:**
+   Abra o navegador e acesse `http://localhost:5173`.
+
+---
+
+## Tecnologias Utilizadas
+
+- **React**: Biblioteca para construção de interfaces de usuário.
+- **TypeScript**: Superset do JavaScript para tipagem estática.
+- **Vite**: Ferramenta de build rápida para desenvolvimento.
+- **CSS Modules**: Estilização modular para componentes.
+- **Atomic Design**: Metodologia para organização de componentes.
+
+---
+
+## Funcionalidades Principais
+
+- Design responsivo para diferentes tamanhos de tela.
+- Navegação intuitiva com menu interativo.
+- Estrutura modular e escalável baseada em Atomic Design.
+
+---
+
+## Estrutura de Pastas
+
+```plaintext
+src/
+├── assets/         # Recursos estáticos (imagens, ícones)
+├── components/     # Componentes organizados por Atomic Design
+│   ├── atoms/      # Componentes básicos (ex: Button)
+│   ├── molecules/  # Combinações de átomos (ex: Navbar)
+│   └── organisms/  # Combinações de moléculas (ex: Header)
+├── layout/         # Layouts principais
+├── pages/          # Páginas da aplicação
+└── types/          # Definições de tipos TypeScript
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Como Usar
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+1. Navegue pelo menu para explorar as seções do portfólio.
+2. Visualize os projetos e leia as descrições detalhadas.
+3. Entre em contato através das informações fornecidas na seção de contato.
+
+---
+
+## Contato
+
+- **Autor:** Tiago de Noronha Leopoldo
+- **Email:** tnleopoldo.dev@gmail.com
+- **GitHub:** [TiagoLeopoldo](https://github.com/TiagoLeopoldo)
+
+---
+
+Desenvolvido por Tiago de Noronha Leopoldo.

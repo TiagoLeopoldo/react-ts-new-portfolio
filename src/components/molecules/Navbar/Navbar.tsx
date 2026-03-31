@@ -57,7 +57,7 @@ const Navbar = () => {
           open={isMobileMenuOpen}
           onClick={toggleMobileMenu}
           ariaLabel="Abrir menu"
-          className="navbar-toggle"
+          className={`navbar-toggle ${isMobileMenuOpen ? 'navbar-toggle--open' : ''}`}
         >
           <span></span>
           <span></span>
