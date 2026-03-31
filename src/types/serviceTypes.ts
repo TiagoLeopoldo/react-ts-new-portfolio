@@ -4,10 +4,9 @@ export interface ProfileInfo {
   job: string;
   linkedin: string;
   curriculum: string;
-  location: string;
   phone: string;
   email: string;
-  github: string;
+  github?: string;
 }
 
 export interface ProfileResponse {

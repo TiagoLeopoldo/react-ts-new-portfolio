@@ -2,10 +2,9 @@
   "personalInfos": {
     "name": "Tiago de N. Leopoldo",
     "photo": "https://avatars.githubusercontent.com/u/122064619?s=400&u=3a495d1306a47e300e8ace07e8bc9a0042aec123&v=4",
-    "job": "Desenvolvedor Web",
+    "job": "Desenvolvedor Fullstack",
     "linkedin": "https://www.linkedin.com/in/tiago-noronha-leopoldo",
-    "curriculum": "https://drive.google.com/file/d/18FXJVMwFM60duEyl7ghfNDrQaa6SNUav/view?usp=drive_link",
-    "location": "São João de Meriti/RJ - Brasil",
+    "curriculum": "https://drive.google.com/file/d/1xeo-ZecoFdVyB97XvP5V8PRkxVGHhK_o/view?usp=drive_link",
     "phone": "(21) 97427-8358",
     "email": "tnleopoldo.dev@gmail.com"
   },
@@ -95,7 +94,7 @@
         "id": "1",
         "name": "Meu Portfólio",
         "description": "Portfólio em React e TypeScript com consumo de API REST em Node.js. Estrutura baseada em componentes, escalável e validada com boas práticas modernas.",
-        "repositorie": "https://github.com/TiagoLeopoldo/portfolio-react-ts",
+        "repository": "https://github.com/TiagoLeopoldo/portfolio-react-ts",
         "deploy": "https://www.tiagonldev.com.br",
         "github": true
       },
@@ -103,7 +102,7 @@
         "id": "2",
         "name": "Email Classifier AI",
         "description": "Aplicação em Python e FastAPI para classificação de e-mails, integração com OpenAI e parsing de PDFs. Utiliza técnicas de NLP com NLTK e arquitetura em camadas.",
-        "repositorie": "https://github.com/TiagoLeopoldo/email-ai-js-py",
+        "repository": "https://github.com/TiagoLeopoldo/email-ai-js-py",
         "deploy": "https://email-ai-js-py.vercel.app/",
         "github": true
       },
@@ -111,7 +110,7 @@
         "id": "3",
         "name": "Re.Colhe",
         "description": "Protótipo web mobile-first voltado à sustentabilidade, desenvolvido em React e TypeScript. Inclui mapa interativo, fórum comunitário e conteúdos educativos. Para testar a aplicação, utilize as credenciais pré-configuradas: Morador (MariaSouza@mail.com / 123456) ou Empresa (HenriqueMattos@mail.com / 123456).",
-        "repositorie": "https://github.com/TiagoLeopoldo/Re-Colhe-Frontend-TCC-2025",
+        "repository": "https://github.com/TiagoLeopoldo/Re-Colhe-Frontend-TCC-2025",
         "deploy": "https://tiagoleopoldo.github.io/Re-Colhe-Frontend-TCC-2025/",
         "github": true
       }

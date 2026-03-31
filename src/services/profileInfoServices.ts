@@ -1,16 +1,17 @@
+import data from "../data/infos.json";
 import type { ProfileInfo, ProfileResponse } from "../types/serviceTypes";
-import api from "./api";
 
 export const getProfileInfo = async (): Promise<ProfileInfo> => {
   try {
-    const { data } = await api.get<ProfileResponse>("/api/list");
+    const typedData = data as ProfileResponse;
 
-    if (!data?.personalInfos) {
-      throw new Error("Resposta inválida da API pesonalInfos");
+    if (!typedData?.personalInfos) {
+      throw new Error("Estrutura inválida: personalInfos não encontrado");
     }
 
-    return data.personalInfos;
+    return typedData.personalInfos;
   } catch (error) {
-    throw new Error("Falha ao buscar informações de profile.");
+    console.error(error);
+    throw new Error("Erro ao buscar profile.");
   }
 };
