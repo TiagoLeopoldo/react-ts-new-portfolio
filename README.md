@@ -12,19 +12,19 @@ Este é o portfólio pessoal de Tiago de Noronha Leopoldo, desenvolvido para apr
 ## Demonstração Visual
 
 ### Esboço do Planejamento Inicial
-![Esboço do Planejamento](./docs/atomic-design-planning.png)
+![Esboço do Planejamento](./docs/header-images/atomic-design-planning.svg)
 
 ### Resultado Atual
 
 #### Versão Desktop
-![Versão Desktop](./docs/large.png)
+![Versão Desktop](./docs/header-images/large.png)
 
 #### Versão Mobile
 Menu Aberto:
-![Menu Aberto](./docs/small-menu-open.png)
+![Menu Aberto](./docs/header-images/small-menu-open.png)
 
 Menu Fechado:
-![Menu Fechado](./docs/small-menu-closed.png)
+![Menu Fechado](./docs/header-images/small-menu-closed.png)
 
 ---
 

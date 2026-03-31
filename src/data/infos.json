@@ -1,0 +1,153 @@
+{
+  "personalInfos": {
+    "name": "Tiago de N. Leopoldo",
+    "photo": "https://avatars.githubusercontent.com/u/122064619?s=400&u=3a495d1306a47e300e8ace07e8bc9a0042aec123&v=4",
+    "job": "Desenvolvedor Web",
+    "linkedin": "https://www.linkedin.com/in/tiago-noronha-leopoldo",
+    "curriculum": "https://drive.google.com/file/d/18FXJVMwFM60duEyl7ghfNDrQaa6SNUav/view?usp=drive_link",
+    "location": "São João de Meriti/RJ - Brasil",
+    "phone": "(21) 97427-8358",
+    "email": "tnleopoldo.dev@gmail.com"
+  },
+
+  "skills": {
+    "hardSkills": [
+      {
+        "id": "1",
+        "name": "React",
+        "logo": "https://cdn.worldvectorlogo.com/logos/react-2.svg"
+      },
+      {
+        "id": "2",
+        "name": "Node",
+        "logo": "https://cdn.worldvectorlogo.com/logos/nodejs-icon.svg"
+      },
+      {
+        "id": "3",
+        "name": "Next.js",
+        "logo": "https://cdn.worldvectorlogo.com/logos/next-js.svg"
+      },
+      {
+        "id": "4",
+        "name": "TypeScript",
+        "logo": "https://cdn.worldvectorlogo.com/logos/typescript.svg"
+      },
+      {
+        "id": "5",
+        "name": "HTML5",
+        "logo": "https://cdn.worldvectorlogo.com/logos/html-1.svg"
+      },
+      {
+        "id": "6",
+        "name": "CSS3",
+        "logo": "https://cdn.worldvectorlogo.com/logos/css-3.svg"
+      },
+      {
+        "id": "7",
+        "name": "Tailwind CSS",
+        "logo": "https://cdn.worldvectorlogo.com/logos/tailwind-css-2.svg"
+      },
+      {
+        "id": "8",
+        "name": "styled-components",
+        "logo": "https://cdn.worldvectorlogo.com/logos/styled-components-1.svg"
+      },
+      {
+        "id": "9",
+        "name": "Git",
+        "logo": "https://cdn.worldvectorlogo.com/logos/git-icon.svg"
+      },
+      {
+        "id": "10",
+        "name": "GitHub",
+        "logo": "https://cdn.worldvectorlogo.com/logos/github-icon-1.svg"
+      },
+      {
+        "id": "11",
+        "name": "Vite",
+        "logo": "https://cdn.worldvectorlogo.com/logos/vitejs.svg"
+      },
+      {
+        "id": "12",
+        "name": "Yarn",
+        "logo": "https://avatars.githubusercontent.com/u/22247014?s=64&v=4"
+      }
+    ],
+    "softSkills": [
+      { "id": "1", "name": "Trabalho em equipe" },
+      { "id": "2", "name": "Comunicação eficaz" },
+      { "id": "3", "name": "Empatia" },
+      { "id": "4", "name": "Protatividade e autonomia" },
+      { "id": "5", "name": "Organização" },
+      { "id": "6", "name": "Aprendizado contínuo" },
+      { "id": "7", "name": "Resolução de problemas" }
+    ]
+  },
+
+  "languages": [
+    { "id": "1", "language": "Português BR (Nativo)" },
+    { "id": "2", "language": "Inglês (Básico - leitura técnica)" }
+  ],
+
+  "portfolio": {
+    "projects": [
+      {
+        "id": "1",
+        "name": "Meu Portfólio",
+        "description": "Portfólio em React e TypeScript com consumo de API REST em Node.js. Estrutura baseada em componentes, escalável e validada com boas práticas modernas.",
+        "repositorie": "https://github.com/TiagoLeopoldo/portfolio-react-ts",
+        "deploy": "https://www.tiagonldev.com.br",
+        "github": true
+      },
+      {
+        "id": "2",
+        "name": "Email Classifier AI",
+        "description": "Aplicação em Python e FastAPI para classificação de e-mails, integração com OpenAI e parsing de PDFs. Utiliza técnicas de NLP com NLTK e arquitetura em camadas.",
+        "repositorie": "https://github.com/TiagoLeopoldo/email-ai-js-py",
+        "deploy": "https://email-ai-js-py.vercel.app/",
+        "github": true
+      },
+      {
+        "id": "3",
+        "name": "Re.Colhe",
+        "description": "Protótipo web mobile-first voltado à sustentabilidade, desenvolvido em React e TypeScript. Inclui mapa interativo, fórum comunitário e conteúdos educativos. Para testar a aplicação, utilize as credenciais pré-configuradas: Morador (MariaSouza@mail.com / 123456) ou Empresa (HenriqueMattos@mail.com / 123456).",
+        "repositorie": "https://github.com/TiagoLeopoldo/Re-Colhe-Frontend-TCC-2025",
+        "deploy": "https://tiagoleopoldo.github.io/Re-Colhe-Frontend-TCC-2025/",
+        "github": true
+      }
+    ]
+  },
+
+  "professionalExperiences": {
+    "experiences": [
+      {
+        "id": "1",
+        "name": "Estartando Dev's - Desenvolvedor Front-end Aprendiz (React.js, TypeScript, CSS)",
+        "period": "agosto 2025 - novembro 2025",
+        "description": "Desenvolvimento do front-end da aplicação Re.Colhe em React e TypeScript. Criação de biblioteca de componentes reutilizáveis, integração de APIs REST e implementação de layouts responsivos e acessíveis. Versionamento com Git/GitHub em colaboração com equipes de back-end e UX/UI."
+      },
+      {
+        "id": "2",
+        "name": "MartSpec LLC - Desenvolvedor Front-end Voluntário (React.js, TypeScript, BootStrap)",
+        "period": "maio 2025 - junho 2025",
+        "description": "Atuação em equipe internacional no desenvolvimento e modernização de plataforma web. Refatoração de componentes com Atomic Design, internacionalização para 12 idiomas e colaboração ágil via Jira e Slack."
+      },
+      {
+        "id": "3",
+        "name": "Transição de carreira",
+        "period": "novembro 2024 - maio 2025",
+        "description": "Transição da gastronomia para tecnologia. Participação em projetos reais com React, TypeScript, Git e metodologias ágeis, além de formação em Análise e Desenvolvimento de Sistemas."
+      }
+    ]
+  },
+
+  "academic": {
+    "course": [
+      {
+        "id": "1",
+        "name": "CST em Análise e Desenvolvimento de Sistemas - Universidade Veiga de Almeida",
+        "period": "maio 2025 - presente"
+      }
+    ]
+  }
+}
