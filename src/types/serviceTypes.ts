@@ -47,17 +47,17 @@ export interface ProfessionalExperienceInfo {
   experiences: ExperiencesInfo[];
 }
 
-interface Projects {
+export interface Project {
   id:string;
   name: string;
   description: string;
-  repositorie: string;
+  repository: string;
   deploy: string;
   github: boolean;
 }
 
 export interface ProjectsInfo {
-  projects: Projects[];
+  projects: Project[];
 }
 
 interface Course {

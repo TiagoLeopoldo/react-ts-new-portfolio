@@ -27,7 +27,7 @@ const HeroSection = () => {
   if (error) return <p className="error-state">{error}</p>;
 
   return (
-    <header id="hero" className="header hero-section fade-in-section">
+    <section id="hero" className="hero hero-section fade-in-section">
       {profileInfo ? <>
         <div className="hero-photo-area">
           <div className="photo-container">
@@ -63,7 +63,7 @@ const HeroSection = () => {
       </>
         : <p className="error-state">Erro ao carregar!</p>
       }
-    </header>
+    </section>
   );
 }
 
