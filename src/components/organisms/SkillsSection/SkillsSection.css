@@ -1,0 +1,141 @@
+.skills {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+  padding: var(--space-2) 0;
+}
+
+.skills section h3 {
+  font-size: var(--text-xs);
+  color: var(--secondary);
+  margin-bottom: var(--space-4);
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-weight: 700;
+}
+
+.skills .tools ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(64px, 1fr));
+  gap: var(--space-4);
+  justify-content: flex-start;
+}
+
+.skills .tools ul li {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  transition: all var(--transition-base);
+}
+
+@media (hover: none) {
+  .skills .tools ul li {
+    background-color: var(--surface-hover); /* Lighter background for better contrast on mobile */
+  }
+}
+
+.skills .tools ul li img {
+  max-width: 32px;
+  max-height: 32px;
+  /* Baseline for Touch/Mobile: Original colors + subtle glow to ensure dark logos are visible */
+  filter: drop-shadow(0 0 1px rgba(255, 255, 255, 0.3));
+  opacity: 1;
+  transition: all var(--transition-base);
+}
+
+/* Desktop Interaction Logic */
+@media (hover: hover) and (pointer: fine) {
+  .skills .tools ul li img {
+    /* Standard White Silhouette for dark backgrounds - matches Apple/Vercel standard */
+    filter: brightness(0) invert(1);
+    opacity: 0.6; 
+  }
+
+  .skills .tools ul li:hover img {
+    /* Smoothly reveal original brand color on hover */
+    filter: none;
+    opacity: 1;
+  }
+
+  .skills .tools ul li:hover {
+    border-color: var(--accent);
+    transform: translateY(-4px);
+    background-color: var(--surface-hover);
+    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.5);
+  }
+
+  /* Tooltip only on true hover devices */
+  .skills .tools ul li::after {
+    content: attr(data-skill);
+    position: absolute;
+    top: -35px;
+    left: 50%;
+    transform: translateX(-50%) translateY(5px);
+    background-color: var(--surface-hover);
+    color: var(--primary);
+    padding: var(--space-1) var(--space-2);
+    border-radius: var(--radius-sm);
+    font-size: 10px;
+    font-weight: 700;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: all var(--transition-fast);
+    border: 1px solid var(--border);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+  }
+
+  .skills .tools ul li:hover::after {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+}
+
+.skills .personal ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+}
+
+.skills .personal ul li {
+  font-size: var(--text-sm);
+  font-weight: 500;
+  padding: var(--space-2) var(--space-4);
+  background-color: var(--surface);
+  color: var(--secondary);
+  border-radius: var(--radius-full);
+  border: 1px solid var(--border);
+  transition: all var(--transition-fast);
+}
+
+/* Default "Hover" state for Touch Devices */
+@media (hover: none) {
+  .skills .personal ul li {
+    border-color: var(--accent);
+    color: var(--primary);
+    background-color: var(--surface-hover);
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .skills .personal ul li:hover {
+    border-color: var(--accent);
+    color: var(--primary);
+    background-color: var(--surface-hover);
+    transform: scale(1.02);
+  }
+}
+
+@media (min-width: 1024px) {
+  .skills {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-8);
+  }
+}

@@ -5,7 +5,7 @@
 ![License](https://img.shields.io/badge/license-MIT-green)
 
 ## Descrição
-Este é o portfólio pessoal de Tiago de Noronha Leopoldo, desenvolvido para apresentar projetos, habilidades e experiências de forma profissional e atrativa. O projeto utiliza o conceito de Atomic Design para organizar os componentes e garantir escalabilidade.
+Este é o portfólio pessoal de Tiago de Noronha Leopoldo, desenvolvido para apresentar projetos, habilidades e experiências de forma profissional e atrativa. O projeto utiliza o conceito de Atomic Design para organizar os componentes e garantir escalabilidade. Ele foi desenvolvido utilizando React com TypeScript e Vite, garantindo alta performance e modularidade.
 
 ---
 
@@ -48,45 +48,37 @@ Siga os passos abaixo para rodar o projeto localmente:
 
 ---
 
+## Estrutura do Projeto
+
+O projeto segue a seguinte estrutura de pastas:
+
+- **src/**: Contém todo o código-fonte da aplicação.
+  - **components/**: Componentes reutilizáveis organizados em átomos, moléculas e organismos.
+  - **pages/**: Páginas principais da aplicação.
+  - **services/**: Serviços para manipulação de dados e integração com APIs.
+  - **assets/**: Recursos estáticos como imagens, ícones e fontes.
+
+- **public/**: Arquivos públicos acessíveis diretamente.
+- **docs/**: Documentação e imagens relacionadas ao projeto.
+
+---
+
 ## Tecnologias Utilizadas
 
-- **React**: Biblioteca para construção de interfaces de usuário.
-- **TypeScript**: Superset do JavaScript para tipagem estática.
-- **Vite**: Ferramenta de build rápida para desenvolvimento.
-- **CSS Modules**: Estilização modular para componentes.
-- **Atomic Design**: Metodologia para organização de componentes.
+- **React** com **TypeScript**
+- **Vite** para build e desenvolvimento
+- **CSS Modules** para estilização
+- **ESLint** e **Prettier** para padronização de código
 
 ---
 
-## Funcionalidades Principais
+## Contribuição
 
-- Design responsivo para diferentes tamanhos de tela.
-- Navegação intuitiva com menu interativo.
-- Estrutura modular e escalável baseada em Atomic Design.
+Contribuições são bem-vindas! Siga os passos abaixo para contribuir:
 
----
-
-## Estrutura de Pastas
-
-```plaintext
-src/
-├── assets/         # Recursos estáticos (imagens, ícones)
-├── components/     # Componentes organizados por Atomic Design
-│   ├── atoms/      # Componentes básicos (ex: Button)
-│   ├── molecules/  # Combinações de átomos (ex: Navbar)
-│   └── organisms/  # Combinações de moléculas (ex: Header)
-├── layout/         # Layouts principais
-├── pages/          # Páginas da aplicação
-└── types/          # Definições de tipos TypeScript
-```
-
----
-
-## Como Usar
-
-1. Navegue pelo menu para explorar as seções do portfólio.
-2. Visualize os projetos e leia as descrições detalhadas.
-3. Entre em contato através das informações fornecidas na seção de contato.
+1. Faça um fork do repositório.
+2. Crie uma nova branch para sua feature ou correção de bug.
+3. Envie um pull request descrevendo suas alterações.
 
 ---
 

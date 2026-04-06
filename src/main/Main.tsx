@@ -3,6 +3,7 @@ import HeroSection from "../components/organisms/HeroSection/HeroSection";
 import Section from "../components/organisms/Section/Section";
 import "./Main.css"
 import ProfessionalSection from "../components/organisms/ProfessionalSection/ProfessionalSection";
+import SkillsSection from "../components/organisms/SkillsSection/SkillsSection";
 
 
 const Main = () => {
@@ -14,6 +15,9 @@ const Main = () => {
       </Section>
       <Section id="experience" title="Experiência Profissional">
         <ProfessionalSection />
+      </Section>
+      <Section id="skills" title="Habilidades">
+        <SkillsSection />
       </Section>
     </main>
   )
