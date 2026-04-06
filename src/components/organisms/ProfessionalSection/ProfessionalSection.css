@@ -20,7 +20,7 @@
 }
 
 .experience-item::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -47,11 +47,16 @@
   gap: var(--space-4);
 }
 
-.experience-item h3.title {
+.experience-item h3.title,
+.experience-item h3 a {
   font-size: var(--text-lg);
   font-weight: 800;
   color: var(--primary);
   line-height: 1.2;
+}
+
+.experience-item h3 a:hover {
+  color: var(--accent);
 }
 
 .experience-item .period {
