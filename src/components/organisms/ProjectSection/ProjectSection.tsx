@@ -1,7 +1,10 @@
 import { useEffect, useState } from "react";
 import type { ProjectsInfo } from "../../../types/serviceTypes";
 import { getProjectsService } from "../../../services/projectsServices";
-import ProjectList from "../ProjectList/ProjectList";
+import CardProject from "../../molecules/CardProject/CardProject";
+import "./ProjectSection.css";
+
+
 
 const ProjectSection = () => {
 
@@ -28,7 +31,20 @@ const ProjectSection = () => {
   if (loading) return <p className="loading-state">Carregando projetos...</p>;
   if (error) return <p className="error-state">Erro ao carregar projetos</p>;
 
-  return <ProjectList projects = {projectsInfo?.projects || []} />
+
+  return (
+    <>
+      {projectsInfo ?
+        <ul className="projects-grid">
+          {projectsInfo?.projects?.map((project) => {
+            return <CardProject key={project.id} project={project} />
+          })}
+        </ul>
+        :
+        <p className="error-state">Erro ao carregar!</p>
+      }
+    </>
+  )
 
 }
 
