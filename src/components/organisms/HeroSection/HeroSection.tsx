@@ -40,7 +40,7 @@ const HeroSection = () => {
             <h1 className="name">{profileInfo.name}</h1>
             <h2 className="job">{profileInfo.job}</h2>
             <p className="value-prop">
-              Desenvolvedor Fullstack focado em aplicações escaláveis e experiências digitais de alta performance, transformando desafios complexos em produtos intuitivos e eficientes.
+              Desenvolvedor Web focado em experiências digitais que transformam desafios complexos em produtos intuitivos e eficientes.
             </p>
           </div>
 

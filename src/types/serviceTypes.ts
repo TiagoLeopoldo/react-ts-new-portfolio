@@ -40,6 +40,7 @@ interface ExperiencesInfo {
   id: string,
   name: string;
   period: string;
+  link: string;
   description: string;
 }
 

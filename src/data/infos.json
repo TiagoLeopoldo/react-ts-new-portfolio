@@ -2,7 +2,7 @@
   "personalInfos": {
     "name": "Tiago de N. Leopoldo",
     "photo": "https://avatars.githubusercontent.com/u/122064619?s=400&u=3a495d1306a47e300e8ace07e8bc9a0042aec123&v=4",
-    "job": "Desenvolvedor Fullstack",
+    "job": "Desenvolvedor Web",
     "linkedin": "https://www.linkedin.com/in/tiago-noronha-leopoldo",
     "curriculum": "https://drive.google.com/file/d/1xeo-ZecoFdVyB97XvP5V8PRkxVGHhK_o/view?usp=drive_link",
     "phone": "(21) 97427-8358",
@@ -123,13 +123,15 @@
         "id": "1",
         "name": "Estartando Dev's - Desenvolvedor Front-end Aprendiz (React.js, TypeScript, CSS)",
         "period": "agosto 2025 - novembro 2025",
-        "description": "Desenvolvimento do front-end da aplicação Re.Colhe em React e TypeScript. Criação de biblioteca de componentes reutilizáveis, integração de APIs REST e implementação de layouts responsivos e acessíveis. Versionamento com Git/GitHub em colaboração com equipes de back-end e UX/UI."
+        "link": "https://tiagoleopoldo.github.io/Re-Colhe-Frontend-TCC-2025/",
+        "description": "Participei de um programa intensivo de formação em desenvolvimento web com foco em Front-end (React, TypeScript, JavaScript, HTML5 e CSS3). Atuei na criação da plataforma Re.colhe, conectando usuários a pontos de coleta de recicláveis, desenvolvendo interfaces interativas, integração com APIs REST, navegação com React Router e mapas dinâmicos com Leaflet. Trabalhei com Design System, UX/UI e colaboração em equipe multidisciplinar."
       },
       {
         "id": "2",
         "name": "MartSpec LLC - Desenvolvedor Front-end Voluntário (React.js, TypeScript, BootStrap)",
         "period": "maio 2025 - junho 2025",
-        "description": "Atuação em equipe internacional no desenvolvimento e modernização de plataforma web. Refatoração de componentes com Atomic Design, internacionalização para 12 idiomas e colaboração ágil via Jira e Slack."
+        "link": "https://martspec.com/",
+        "description": "Participei de onboarding técnico com definição de padrões de versionamento e fluxo de PRs, além da gestão de tarefas via Jira em ambiente ágil. Desenvolvi conteúdo multilíngue com internacionalização (12+ idiomas), colaborei com equipes internacionais e de UX/UI, refatorei componentes e adaptei layouts seguindo boas práticas de semântica e consistência visual. Atuei em ciclo remoto de voluntariado, cumprindo prazos e garantindo qualidade das entregas."
       }
     ]
   },
