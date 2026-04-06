@@ -1,9 +1,12 @@
-import HeroSection from "../components/organisms/Hero/HeroSection";
+import "./LayoutHome.css";
+import Header from "../components/organisms/Header/Header";
+import Main from "../main/Main";
 
 const LayoutHome = () => {
   return (
     <>
-      <HeroSection/>
+      <Header/>
+      <Main/>
     </>
   )
 }

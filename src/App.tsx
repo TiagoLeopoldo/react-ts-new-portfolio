@@ -1,14 +1,15 @@
 
+import { Route, Routes } from 'react-router-dom';
 import './App.css'
-import Header from './components/organisms/Header/Header';
 import Home from './pages/Home';
 
 const App = () => {
 
   return (
     <>
-      <Header />
-      <Home />
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
     </>
   )
 }
