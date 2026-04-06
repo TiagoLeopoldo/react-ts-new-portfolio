@@ -11,13 +11,13 @@ const CardProject = ({ project }: CardProjectProps) => {
   return (
     <li className="project-card clickable">
       <div className="project-image">
-      {/*}  { project ? (
-          <img src="#" alt={project.name} />
-        ) : (
-          <div className="image-fallback">
-            <span>{project.name}</span>
-          </div>
-        )} */}
+        <img
+          src={project.img}
+          alt={project.name}
+          onError={(e) => {
+            e.currentTarget.src = "/fallback.png";
+          }}
+        />
       </div>
 
       <div className="project-content">
