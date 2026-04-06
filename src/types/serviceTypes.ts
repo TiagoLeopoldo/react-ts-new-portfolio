@@ -51,6 +51,7 @@ export interface ProfessionalExperienceInfo {
 export interface Project {
   id:string;
   name: string;
+  img: string;
   description: string;
   repository: string;
   deploy: string;
