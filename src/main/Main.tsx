@@ -9,10 +9,10 @@ const Main = () => {
   return (
     <main className="main">
       <HeroSection />
-      <Section title="Projetos">
+      <Section id="projects" title="Projetos">
         <ProjectSection />
       </Section>
-      <Section title="Experiência Profissional">
+      <Section id="experience" title="Experiência Profissional">
         <ProfessionalSection />
       </Section>
     </main>
