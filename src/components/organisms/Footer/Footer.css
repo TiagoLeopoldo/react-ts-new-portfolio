@@ -1,12 +1,13 @@
 .footer {
   background-color: #0c0c0e; /* Tom mais escuro para fechamento */
-  padding: 80px 0 120px 0; /* Espaçamento generoso e Safe Area inferior */
+  padding: 3.75rem 0 6.25rem 0; /* 60px 0 100px 0 - Mobile default */
+  text-align: center;
   border-top: 1px solid rgba(255, 255, 255, 0.05);
   margin-top: var(--space-12);
 }
 
 .footer-container {
-  max-width: 1200px;
+  max-width: 75rem; /* 1200px */
   margin: 0 auto;
   padding: 0 var(--space-6);
 }
@@ -17,16 +18,15 @@
   gap: var(--space-10);
 }
 
-@media (min-width: 1024px) {
-  .footer-content {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-  }
+.footer-brand, .footer-nav, .footer-social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100%;
 }
 
 .footer-brand {
-  max-width: 300px;
+  max-width: 18.75rem; /* 300px */
 }
 
 .footer-logo {
@@ -51,7 +51,7 @@
 .footer-title {
   font-size: var(--text-xs);
   text-transform: uppercase;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.1rem;
   color: var(--primary);
   margin-bottom: var(--space-4);
   font-weight: 800;
@@ -73,13 +73,14 @@
 
 .footer-links a:hover {
   color: var(--accent);
-  padding-left: 4px;
+  padding-left: 0.25rem; /* 4px */
 }
 
 .footer-social-links {
   display: flex;
   gap: var(--space-4);
   margin-bottom: var(--space-6);
+  justify-content: center;
 }
 
 .footer-social-links a {
@@ -101,7 +102,7 @@
   color: var(--accent);
   text-decoration: none;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.05rem;
   padding: var(--space-2) var(--space-4);
   background-color: rgba(59, 130, 246, 0.05);
   border-radius: var(--radius-sm);
@@ -111,7 +112,7 @@
 .back-to-top:hover {
   background-color: var(--accent);
   color: white !important;
-  transform: translateY(-4px);
+  transform: translateY(-0.25rem); /* 4px */
   box-shadow: 0 10px 20px rgba(59, 130, 246, 0.2);
 }
 
@@ -128,20 +129,28 @@
   opacity: 0.6;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .footer {
-    padding: 60px 0 100px 0;
-    text-align: center;
+    padding: 5rem 0 7.5rem 0; /* 80px 0 120px 0 */
   }
-  
+}
+
+@media (min-width: 1024px) {
+  .footer {
+    text-align: left;
+  }
+
+  .footer-content {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
   .footer-brand, .footer-nav, .footer-social {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 100%;
+    align-items: flex-start;
   }
 
   .footer-social-links {
-    justify-content: center;
+    justify-content: flex-start;
   }
 }

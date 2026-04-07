@@ -93,18 +93,72 @@
     "projects": [
       {
         "id": "1",
+        "slug": "martspec",
         "name": "MartSpec LLC",
-        "img": "img-projects/martspec.png",
-        "description": "Desenvolvimento e manutenção do site da Martspec, empresa de produtos digitais que cria aplicações para Apple Watch. Atuei na implementação de conteúdo multilíngue com internacionalização, adaptação de layouts e melhorias visuais em colaboração com equipe de UX/UI, além de participar do fluxo de versionamento e code reviews em ambiente ágil.",
+        "img": "/img-projects/martspec.png",
+        "description": "Desenvolvimento e manutenção do site da Martspec, empresa de produtos digitais que cria aplicações para Apple Watch.",
+        "longDescription": "Como desenvolvedor front-end na MartSpec LLC, fui responsável por elevar a presença digital da empresa, garantindo que o site refletisse a inovação de seus produtos para Apple Watch.",
+        "context": "A MartSpec precisava de uma plataforma que suportasse múltiplos idiomas e oferecesse uma experiência de usuário impecável em diversos dispositivos, alinhada com a estética premium de seus aplicativos.",
+        "challenges": [
+          {
+            "title": "Internacionalização Complexa",
+            "description": "Implementação de suporte para mais de 12 idiomas, garantindo que o layout permanecesse consistente independentemente do comprimento do texto."
+          },
+          {
+            "title": "Colaboração Cross-border",
+            "description": "Trabalho em equipe multidisciplinar e internacional com fusos horários distintos e fluxos de trabalho ágeis."
+          }
+        ],
+        "architecture": {
+          "techStack": ["React", "TypeScript", "Bootstrap", "i18next"],
+          "description": "Arquitetura baseada em componentes reutilizáveis focada em escalabilidade e manutenção facilitada para adição de novos idiomas."
+        },
+        "features": [
+          {
+            "title": "Internacionalização",
+            "description": "Sistema dinâmico de troca de idiomas sem recarregamento de página."
+          },
+          {
+            "title": "Design Responsivo",
+            "description": "Interface adaptada para todos os tipos de telas, de smartphones a desktops ultra-wide."
+          }
+        ],
         "repository": "n/a",
         "deploy": "https://martspec.com/",
         "github": false
       },
       {
         "id": "2",
+        "slug": "recolhe",
         "name": "Re.Colhe",
         "img": "/img-projects/recolhe.png",
-        "description": "Re.colhe é uma plataforma digital criada para conectar moradores e empresas a pontos de coleta de materiais recicláveis, incentivando práticas sustentáveis e facilitando o acesso a informações como endereço, contato e horário de funcionamento dos locais. O projeto nasceu em um ambiente colaborativo e multidisciplinar, com foco em impacto social e na promoção da economia circular. A plataforma oferece formas de login simuladas para diferentes perfis de usuário — Morador (MariaSouza@mail.com / 123456) ou Empresa (HenriqueMattos@mail.com / 123456) — permitindo experiências personalizadas e reforçando o propósito de engajamento comunitário.",
+        "description": "Plataforma para conectar moradores e empresas a pontos de coleta de materiais recicláveis.",
+        "longDescription": "O Re.Colhe é uma solução completa para a gestão de logística reversa comunitária, facilitando o descarte correto de resíduos.",
+        "context": "O projeto surgiu da necessidade de centralizar informações sobre pontos de coleta, que muitas vezes são difíceis de encontrar para o cidadão comum.",
+        "challenges": [
+          {
+            "title": "Mapas Interativos",
+            "description": "Integração com Leaflet para exibição de pontos de coleta geolocalizados de forma performática."
+          },
+          {
+            "title": "Perfis de Usuário",
+            "description": "Criação de fluxos distintos para Moradores e Empresas dentro da mesma plataforma."
+          }
+        ],
+        "architecture": {
+          "techStack": ["React", "TypeScript", "Leaflet", "React Router"],
+          "description": "Single Page Application (SPA) com roteamento dinâmico e integração profunda com APIs de geolocalização."
+        },
+        "features": [
+          {
+            "title": "Busca por CEP",
+            "description": "Localização automática de pontos de coleta próximos baseada no endereço do usuário."
+          },
+          {
+            "title": "Painel de Gestão",
+            "description": "Interface administrativa para empresas gerenciarem seus próprios pontos de descarte."
+          }
+        ],
         "repository": "https://github.com/TiagoLeopoldo/Re-Colhe-Frontend-TCC-2025",
         "deploy": "https://tiagoleopoldo.github.io/Re-Colhe-Frontend-TCC-2025/",
         "github": true

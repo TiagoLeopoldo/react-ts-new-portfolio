@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { getProfessionalExperienceInfo } from "../../../services/professionalServices";
 import type { ProfessionalExperienceInfo } from "../../../types/serviceTypes";
 import "./ProfessionalSection.css";
+import ExternalIcon from "../../atoms/ExternalIcon/ExternalIcon";
 
 const ProfessionalSection = () => {
   const [professionalInfo, setProfessionalInfo] = useState<ProfessionalExperienceInfo | null>(null);
@@ -37,7 +38,7 @@ const ProfessionalSection = () => {
             return (
               <li key={experience.id} className="experience-item fade-in-section">
                 <div className="experience-header">
-                  <h3 className="title"><a className="title-link" rel="noopener noreferrer" href={experience.link} target="_blank">{experience.name}</a></h3>
+                  <h3 className="title"><a className="title-link" rel="noopener noreferrer" href={experience.link} target="_blank">{experience.name} <ExternalIcon/></a></h3>
                   <span className="period">{experience.period}</span>
                 </div>
                 <p className="impact-description">{impactfulDescription}</p>

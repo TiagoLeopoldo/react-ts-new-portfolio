@@ -48,14 +48,36 @@ export interface ProfessionalExperienceInfo {
   experiences: ExperiencesInfo[];
 }
 
+export interface ProjectChallenge {
+  title: string;
+  description: string;
+}
+
+export interface ProjectFeature {
+  title: string;
+  description: string;
+}
+
+export interface ProjectArchitecture {
+  techStack: string[];
+  description: string;
+}
+
 export interface Project {
-  id:string;
+  id: string;
+  slug: string;
   name: string;
   img: string;
   description: string;
+  longDescription?: string;
+  context?: string;
+  challenges?: ProjectChallenge[];
+  architecture?: ProjectArchitecture;
+  features?: ProjectFeature[];
   repository?: string;
   deploy: string;
   github: boolean;
+  gallery?: string[];
 }
 
 export interface ProjectsInfo {

@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import type { Project } from "../../../types/serviceTypes";
 import "./CardProject.css";
 
@@ -6,10 +7,16 @@ interface CardProjectProps {
 }
 
 const CardProject = ({ project }: CardProjectProps) => {
+  const navigate = useNavigate();
 
+  const handleCardClick = () => {
+    if (project.slug) {
+      navigate(`/projeto/${project.slug}`);
+    }
+  };
 
   return (
-    <li className="project-card clickable">
+    <li className="project-card clickable" onClick={handleCardClick}>
       <div className="project-image">
         <img
           src={project.img}
@@ -25,29 +32,6 @@ const CardProject = ({ project }: CardProjectProps) => {
         <p>{project.description}</p>
       </div>
 
-      <div className="project-actions">
-        {project.deploy && (
-          <a
-            href={project.deploy}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn-deploy"
-            onClick={(e) => e.stopPropagation()}
-          >
-            Ver Projeto
-          </a>
-        )}
-        <a
-          href={project.repository}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="btn-repo"
-          style={{ display: project.github ? "block" : "none" }}
-          onClick={(e) => e.stopPropagation()}
-        >
-          Repositório
-        </a>
-      </div>
     </li>
   );
 }

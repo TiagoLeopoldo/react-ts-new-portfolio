@@ -31,12 +31,12 @@
 
 .photo-container {
   position: relative;
-  width: 160px;
-  height: 160px;
+  width: 10rem; /* 160px */
+  height: 10rem; /* 160px */
   border-radius: var(--radius-full);
   background: linear-gradient(135deg, var(--accent) 0%, transparent 100%);
-  padding: 4px; /* Border effect */
-  box-shadow: 0 0 40px rgba(59, 130, 246, 0.15);
+  padding: 0.25rem; /* 4px - Border effect */
+  box-shadow: 0 0 40px rgba(59, 130, 246, 0.15); /* Shadow in PX */
   transition: transform var(--transition-base);
 }
 
@@ -49,7 +49,7 @@
   height: 100%;
   border-radius: var(--radius-full);
   object-fit: cover;
-  border: 4px solid var(--surface);
+  border: 4px solid var(--surface); /* Border in PX */
   background-color: var(--surface);
 }
 
@@ -58,7 +58,7 @@
   flex-direction: column;
   gap: var(--space-5);
   width: 100%;
-  max-width: 600px;
+  max-width: 37.5rem; /* 600px */
 }
 
 .identity {
@@ -85,7 +85,7 @@
 .value-prop {
   font-size: var(--text-sm);
   color: var(--secondary);
-  max-width: 500px;
+  max-width: 31.25rem; /* 500px */
   margin: 0 auto;
   line-height: 1.6;
   opacity: 0.9;
@@ -109,15 +109,15 @@
 
 .btn-primary {
   background-color: var(--accent);
-  color: white !important; /* Force white for visibility */
-  box-shadow: 0 10px 20px -10px rgba(59, 130, 246, 0.5);
+  color: white !important;
+  box-shadow: 0 10px 20px -10px rgba(59, 130, 246, 0.5); /* Shadow in PX */
 }
 
 @media (hover: hover) and (pointer: fine) {
   .btn-primary:hover {
     background-color: var(--accent-hover);
     color: white !important;
-    transform: translateY(-2px);
+    transform: translateY(-0.125rem); /* 2px */
     box-shadow: 0 15px 25px -10px rgba(59, 130, 246, 0.6);
   }
 
@@ -125,14 +125,14 @@
     background-color: var(--surface-hover);
     border-color: var(--accent);
     color: var(--accent);
-    transform: translateY(-2px);
+    transform: translateY(-0.125rem); /* 2px */
   }
 }
 
 .btn-secondary {
   background-color: var(--surface);
   color: var(--primary);
-  border: 1px solid var(--border);
+  border: 1px solid var(--border); /* Border in PX */
 }
 
 .contact-details {
@@ -168,12 +168,12 @@
   }
 
   .photo-container {
-    width: 220px;
-    height: 220px;
+    width: 13.75rem; /* 220px */
+    height: 13.75rem; /* 220px */
   }
 
   .hero-text-area {
-    max-width: 800px;
+    max-width: 50rem; /* 800px */
   }
 
   .name {
@@ -187,7 +187,7 @@
   .value-prop {
     font-size: var(--text-base);
     margin: var(--space-2) 0 0 0;
-    max-width: 550px;
+    max-width: 34.375rem; /* 550px */
   }
 
   .actions {
@@ -200,8 +200,8 @@
   }
 
   .separator {
-    width: 4px;
-    height: 4px;
+    width: 0.25rem; /* 4px */
+    height: 0.25rem; /* 4px */
     background-color: var(--border);
     border-radius: var(--radius-full);
   }
@@ -216,12 +216,12 @@
   }
 
   .photo-container {
-    width: 280px;
-    height: 280px;
+    width: 17.5rem; /* 280px */
+    height: 17.5rem; /* 280px */
   }
 
   .hero-text-area {
-    max-width: 900px;
+    max-width: 56.25rem; /* 900px */
   }
 
   .name {
@@ -234,7 +234,7 @@
 
   .value-prop {
     font-size: var(--text-lg);
-    max-width: 650px;
+    max-width: 40.625rem; /* 650px */
     margin-top: var(--space-3);
   }
 }

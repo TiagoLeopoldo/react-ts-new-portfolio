@@ -10,13 +10,13 @@
   color: var(--secondary);
   margin-bottom: var(--space-4);
   text-transform: uppercase;
-  letter-spacing: 0.15em;
+  letter-spacing: 0.15rem;
   font-weight: 700;
 }
 
 .skills .tools ul {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(64px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(4rem, 1fr)); /* 64px */
   gap: var(--space-4);
   justify-content: flex-start;
 }
@@ -26,23 +26,23 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 64px;
-  height: 64px;
+  width: 4rem; /* 64px */
+  height: 4rem; /* 64px */
   background-color: var(--surface);
-  border: 1px solid var(--border);
+  border: 1px solid var(--border); /* Border in PX */
   border-radius: var(--radius-md);
   transition: all var(--transition-base);
 }
 
 @media (hover: none) {
   .skills .tools ul li {
-    background-color: var(--surface-hover); /* Lighter background for better contrast on mobile */
+    background-color: var(--surface-hover);
   }
 }
 
 .skills .tools ul li img {
-  max-width: 32px;
-  max-height: 32px;
+  max-width: 2rem; /* 32px */
+  max-height: 2rem; /* 32px */
   /* Baseline for Touch/Mobile: Original colors + subtle glow to ensure dark logos are visible */
   filter: drop-shadow(0 0 1px rgba(255, 255, 255, 0.3));
   opacity: 1;
@@ -65,23 +65,23 @@
 
   .skills .tools ul li:hover {
     border-color: var(--accent);
-    transform: translateY(-4px);
+    transform: translateY(-0.25rem); /* 4px */
     background-color: var(--surface-hover);
-    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.5); /* Shadow in PX */
   }
 
   /* Tooltip only on true hover devices */
   .skills .tools ul li::after {
     content: attr(data-skill);
     position: absolute;
-    top: -35px;
+    top: -2.1875rem; /* -35px */
     left: 50%;
-    transform: translateX(-50%) translateY(5px);
+    transform: translateX(-50%) translateY(0.3125rem); /* 5px */
     background-color: var(--surface-hover);
     color: var(--primary);
     padding: var(--space-1) var(--space-2);
     border-radius: var(--radius-sm);
-    font-size: 10px;
+    font-size: 0.625rem; /* 10px */
     font-weight: 700;
     white-space: nowrap;
     opacity: 0;
