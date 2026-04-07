@@ -6,7 +6,7 @@ export interface ProfileInfo {
   curriculum: string;
   phone: string;
   email: string;
-  github?: string;
+  github: string;
 }
 
 export interface ProfileResponse {

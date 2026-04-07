@@ -7,7 +7,6 @@ const navItems = [
   { id: 'projects', label: 'Projetos' },
   { id: 'experience', label: 'Experiência' },
   { id: 'skills', label: 'Skills' },
-  { id: 'education', label: 'Formação' },
 ];
 
 const Navbar = () => {

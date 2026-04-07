@@ -3,7 +3,7 @@ import "./Section.css";
 
 interface SectionProps {
   id: string;
-  title: string;
+  title?: string;
   children: ReactNode;
 }
 
