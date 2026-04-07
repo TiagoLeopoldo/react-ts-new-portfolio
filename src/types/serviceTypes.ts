@@ -53,7 +53,7 @@ export interface Project {
   name: string;
   img: string;
   description: string;
-  repository: string;
+  repository?: string;
   deploy: string;
   github: boolean;
 }

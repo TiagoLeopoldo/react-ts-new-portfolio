@@ -92,18 +92,18 @@
     "projects": [
       {
         "id": "1",
-        "name": "Email Classifier AI",
-        "img": "src/assets/img-projects/classifier.png",
-        "description": "Aplicação em Python e FastAPI para classificação de e-mails, integração com OpenAI e parsing de PDFs. Utiliza técnicas de NLP com NLTK e arquitetura em camadas.",
-        "repository": "https://github.com/TiagoLeopoldo/email-ai-js-py",
-        "deploy": "https://email-ai-js-py.vercel.app/",
-        "github": true
+        "name": "MartSpec LLC",
+        "img": "src/assets/img-projects/martspec.png",
+        "description": "Desenvolvimento e manutenção do site da Martspec, empresa de produtos digitais que cria aplicações para Apple Watch. Atuei na implementação de conteúdo multilíngue com internacionalização, adaptação de layouts e melhorias visuais em colaboração com equipe de UX/UI, além de participar do fluxo de versionamento e code reviews em ambiente ágil.",
+        "repository": "n/a",
+        "deploy": "https://martspec.com/",
+        "github": false
       },
       {
         "id": "2",
         "name": "Re.Colhe",
         "img": "src/assets/img-projects/recolhe.png",
-        "description": "Protótipo web mobile-first voltado à sustentabilidade, desenvolvido em React e TypeScript. Inclui mapa interativo, fórum comunitário e conteúdos educativos. Para testar a aplicação, utilize as credenciais pré-configuradas: Morador (MariaSouza@mail.com / 123456) ou Empresa (HenriqueMattos@mail.com / 123456).",
+        "description": "Re.colhe é uma plataforma digital criada para conectar moradores e empresas a pontos de coleta de materiais recicláveis, incentivando práticas sustentáveis e facilitando o acesso a informações como endereço, contato e horário de funcionamento dos locais. O projeto nasceu em um ambiente colaborativo e multidisciplinar, com foco em impacto social e na promoção da economia circular. A plataforma oferece formas de login simuladas para diferentes perfis de usuário — Morador (MariaSouza@mail.com / 123456) ou Empresa (HenriqueMattos@mail.com / 123456) — permitindo experiências personalizadas e reforçando o propósito de engajamento comunitário.",
         "repository": "https://github.com/TiagoLeopoldo/Re-Colhe-Frontend-TCC-2025",
         "deploy": "https://tiagoleopoldo.github.io/Re-Colhe-Frontend-TCC-2025/",
         "github": true
