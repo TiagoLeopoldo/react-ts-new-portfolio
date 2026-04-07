@@ -37,7 +37,7 @@ interface Language {
 export type LanguagesInfo = Language[];
 
 interface ExperiencesInfo {
-  id: string,
+  id: string;
   name: string;
   period: string;
   link: string;
@@ -77,7 +77,10 @@ export interface Project {
   repository?: string;
   deploy: string;
   github: boolean;
-  gallery?: string[];
+  gallery?: {
+    src: string;
+    alt?: string;
+  }[];
 }
 
 export interface ProjectsInfo {

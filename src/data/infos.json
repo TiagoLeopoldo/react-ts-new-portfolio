@@ -49,7 +49,7 @@
       },
       {
         "id": "8",
-        "name": "styled-components",
+        "name": "Styled-components",
         "logo": "https://cdn.worldvectorlogo.com/logos/styled-components-1.svg"
       },
       {
@@ -96,6 +96,14 @@
         "slug": "martspec",
         "name": "MartSpec LLC",
         "img": "/img-projects/martspec.png",
+        "gallery": [
+          { "src": "/img-projects/martspec1.png", "alt": "Tela de medidas" },
+          {
+            "src": "/img-projects/martspec2.png",
+            "alt": "Tela de zinco com barra de seleção de idiomas"
+          },
+          { "src": "/img-projects/martspec3.png", "alt": "Footer" }
+        ],
         "description": "Desenvolvimento e manutenção do site da Martspec, empresa de produtos digitais que cria aplicações para Apple Watch.",
         "longDescription": "Como desenvolvedor front-end na MartSpec LLC, fui responsável por elevar a presença digital da empresa, garantindo que o site refletisse a inovação de seus produtos para Apple Watch.",
         "context": "A MartSpec precisava de uma plataforma que suportasse múltiplos idiomas e oferecesse uma experiência de usuário impecável em diversos dispositivos, alinhada com a estética premium de seus aplicativos.",
@@ -132,6 +140,16 @@
         "slug": "recolhe",
         "name": "Re.Colhe",
         "img": "/img-projects/recolhe.png",
+        "gallery": [
+          {
+            "src": "/img-projects/recolhe1.png",
+            "alt": "Tela inicial com usuário logado."
+          },
+          {
+            "src": "/img-projects/recolhe2.png",
+            "alt": "Tela de pesquisa ao mapa sobre pontos de coleta."
+          }
+        ],
         "description": "Plataforma para conectar moradores e empresas a pontos de coleta de materiais recicláveis.",
         "longDescription": "O Re.Colhe é uma solução completa para a gestão de logística reversa comunitária, facilitando o descarte correto de resíduos.",
         "context": "O projeto surgiu da necessidade de centralizar informações sobre pontos de coleta, que muitas vezes são difíceis de encontrar para o cidadão comum.",

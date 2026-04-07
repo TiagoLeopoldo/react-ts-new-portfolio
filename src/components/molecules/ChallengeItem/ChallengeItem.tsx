@@ -11,9 +11,6 @@ interface ChallengeItemProps {
 const ChallengeItem: React.FC<ChallengeItemProps> = ({ title, description }) => {
   return (
     <div className="challenge-card">
-      <div className="challenge-icon">
-        <span className="dot"></span>
-      </div>
       <div className="challenge-content">
         <Title level={3}>{title}</Title>
         <Text variant="base">{description}</Text>

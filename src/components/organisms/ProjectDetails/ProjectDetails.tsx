@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Title from '../../atoms/Title/Title';
 import Text from '../../atoms/Text/Text';
 import StackList from '../../molecules/StackList/StackList';
@@ -13,6 +13,8 @@ interface ProjectDetailsProps {
 }
 
 const ProjectDetails: React.FC<ProjectDetailsProps> = ({ project }) => {
+  const [activeImage, setActiveImage] = useState<string | null>(null);
+
   return (
     <div className="project-details">
       {/* Hero Section */}
@@ -92,13 +94,25 @@ const ProjectDetails: React.FC<ProjectDetailsProps> = ({ project }) => {
           <div className="gallery-grid">
             {project.gallery.map((image, index) => (
               <div key={index} className="gallery-item">
-                <img src={image} alt={`Gallery item ${index + 1}`} className="gallery-image" />
+                <img src={image.src} alt={image.alt || `Gallery item ${index + 1}`} className="gallery-image" onClick={() => setActiveImage(image.src)} />
               </div>
             ))}
           </div>
         </section>
       )}
+
+      {activeImage && (
+        <div className="lightbox" onClick={() => setActiveImage(null)}>
+          <img
+            src={activeImage}
+            alt="imagem em zoom"
+            className="lightbox-image"
+            onClick={(e) => e.stopPropagation()}
+          />
+        </div>
+      )}
     </div>
+
   );
 };
 
