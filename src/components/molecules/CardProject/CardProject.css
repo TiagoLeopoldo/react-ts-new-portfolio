@@ -54,6 +54,49 @@
   color: var(--secondary);
 }
 
+
+.project-actions {
+  margin: 2rem;
+  display: flex;
+  gap: var(--space-3);
+  margin-top: auto;
+}
+
+.project-actions a {
+  flex: 1;
+  text-align: center;
+  padding: var(--space-3);
+  border-radius: var(--radius-md);
+  font-size: var(--text-sm);
+  font-weight: 700;
+  transition: all var(--transition-fast);
+}
+
+.btn-deploy {
+  background-color: var(--accent);
+  color: white !important;
+}
+
+.btn-repo {
+  background-color: transparent;
+  border: 1px solid var(--border);
+  color: var(--primary);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .btn-deploy:hover {
+    background-color: var(--accent-hover);
+    transform: translateY(-2px);
+  }
+  
+  .btn-repo:hover {
+    background-color: var(--surface-hover);
+    border-color: var(--accent);
+    color: var(--accent);
+    transform: translateY(-2px);
+  }
+}
+
 @media (min-width: 768px) {
   .project-card:hover {
     transform: translateY(-8px);
