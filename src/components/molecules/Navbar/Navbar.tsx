@@ -31,7 +31,7 @@ const Navbar = () => {
       aria-label="Navegação principal"
     >
       <div className="navbar-container">
-        <a href="#hero" className="navbar-logo" onClick={closeMobileMenu}>
+        <a href="/#hero" className="navbar-logo" onClick={closeMobileMenu}>
           TL<span>.</span>
         </a>
 
@@ -40,7 +40,7 @@ const Navbar = () => {
           {navItems.map((item) => (
             <a
               key={item.id}
-              href={`#${item.id}`}
+              href={`/#${item.id}`}
               className="nav-link"
             >
               {item.label}
@@ -55,7 +55,8 @@ const Navbar = () => {
         <Button
           open={isMobileMenuOpen}
           onClick={toggleMobileMenu}
-          ariaLabel="Abrir menu"
+          aria-label="Abrir menu"
+          variant="ghost"
           className={`navbar-toggle ${isMobileMenuOpen ? 'navbar-toggle--open' : ''}`}
         >
           <span></span>
@@ -68,7 +69,7 @@ const Navbar = () => {
           {navItems.map((item) => (
             <a
               key={item.id}
-              href={`#${item.id}`}
+              href={`/#${item.id}`}
               className="nav-link-mobile"
               onClick={closeMobileMenu}
             >

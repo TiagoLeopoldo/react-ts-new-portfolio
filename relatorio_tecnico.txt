@@ -1,0 +1,49 @@
+# RELATÓRIO TÉCNICO: ANÁLISE COMPLETA DO PORTFÓLIO 2.0 (ATUALIZADO)
+
+## 1. Visão Geral do Projeto
+Este projeto é um portfólio profissional de alta performance, construído com **React 19**, **TypeScript** e **Vite**. A arquitetura foi refinada para suportar múltiplos níveis de navegação, evoluindo de uma SPA simples para uma aplicação estruturada com rotas dinâmicas.
+
+## 2. Arquitetura e Estrutura de Pastas
+O projeto segue rigorosamente o **Atomic Design**, garantindo uma hierarquia clara e escalável.
+
+### Matriz de Componentes:
+- **`src/components/atoms`**: Unidades fundamentais.
+    - `Button`: Componente universal de ação (suporta botões, links e variantes primary/secondary/ghost).
+    - `Tag`: Etiquetas de tecnologia e status.
+    - `Text`: Padronização de parágrafos e spans.
+    - `Title`: Componente dinâmico para headings (h1-h4).
+- **`src/components/molecules`**: Combinações funcionais.
+    - `CardProject`: Exibição resumida de projetos com navegação.
+    - `Navbar`: Navegação principal responsiva.
+    - `ProjectLinks`: Conjunto de botões de ação para projetos.
+    - `StackList`: Exibição horizontal de tecnologias.
+    - `ChallengeItem`: Card unitário descrevendo um desafio técnico.
+    - `FeatureItem`: Item unitário descrevendo uma funcionalidade.
+- **`src/components/organisms`**: Seções ricas de conteúdo.
+    - **Home**: `HeroSection`, `ProjectSection`, `SkillsSection`, `ProfessionalSection`, `Contact`.
+    - **Project Details**: `ProjectDetails` (Organismo único consolidado que gerencia a estrutura completa da página de detalhes).
+
+## 3. Design System e CSS Architecture
+A infraestrutura de estilo foi padronizada sob uma filosofia **Mobile-First** e de unidades relativas.
+- **`index.css`**: Contém os tokens globais (Cores, Spacing, Radius, Typography).
+- **Unidades**: 
+    - `REM`: Utilizado para toda a tipografia, margins, paddings e gaps, garantindo acessibilidade e escalabilidade.
+    - `PX`: Reservado estritamente para bordas, sombras e detalhes fixos de refinamento visual.
+- **Responsividade**: Layouts adaptativos fluídos desde telas pequenas até desktops ultra-wide (87.5rem+).
+- **Aesthetics**: Glassmorphism, Dark Mode premium, animações de entrada (`fadeIn`) e estados de hover consistentes.
+
+## 4. Gerenciamento de Dados e Rotas
+A aplicação é 100% data-driven, separando completamente o conteúdo da visualização.
+- **Source of Truth**: `src/data/infos.json` centraliza todo o conteúdo textual e referências de imagens.
+- **Serviços**: `src/services` gerencia o acesso aos dados, incluindo a lógica de busca por `slug` para páginas dinâmicas.
+- **Roteamento**: `react-router-dom` gerencia as rotas `/` (Home) e `/projeto/:slug` (Detalhes), com transições suaves.
+
+## 5. Novos Recursos (Página de Detalhes)
+A `ProjectDetailsPage` foi projetada para demonstrar profundidade técnica:
+- **Contexto & Motivação**: Narrativa por trás da solução.
+- **Desafios & Soluções**: Demonstração de resolução de problemas reais.
+- **Arquitetura & Stack**: Justificativa das tecnologias escolhidas.
+- **Funcionalidades**: Destaque granular de recursos do produto.
+
+## 6. Conclusão Técnica
+O projeto atingiu um estado de maturidade corporativo. A transição para unidades REM e Mobile-First no código legado, somada à expansão modular de átomos e moléculas, transformou o portfólio em um framework pessoal de desenvolvimento robusto, pronto para novas expansões sem dívida técnica.

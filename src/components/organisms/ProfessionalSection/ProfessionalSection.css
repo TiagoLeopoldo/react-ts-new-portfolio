@@ -24,7 +24,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 4px;
+  width: 0.25rem; /* 4px */
   height: 0;
   background-color: var(--accent);
   transition: height var(--transition-base);
@@ -33,7 +33,7 @@
 .experience-item:hover {
   border-color: var(--accent);
   box-shadow: 0 10px 30px -15px rgba(59, 130, 246, 0.2);
-  transform: translateX(4px);
+  transform: translateX(0.25rem); /* 4px */
 }
 
 .experience-item:hover::before {
@@ -42,9 +42,10 @@
 
 .experience-header {
   display: flex;
+  flex-direction: column; /* Mobile Default */
   justify-content: space-between;
   align-items: flex-start;
-  gap: var(--space-4);
+  gap: var(--space-2);
 }
 
 .experience-item h3.title,
@@ -64,10 +65,10 @@
   color: var(--accent);
   font-weight: 800;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.1rem;
   white-space: nowrap;
   background-color: rgba(59, 130, 246, 0.05);
-  padding: 4px 10px;
+  padding: 0.25rem 0.625rem; /* 4px 10px */
   border-radius: var(--radius-sm);
   border: 1px solid rgba(59, 130, 246, 0.1);
 }
@@ -76,12 +77,12 @@
   font-size: var(--text-base);
   color: var(--secondary);
   line-height: 1.7;
-  max-width: 800px;
+  max-width: 50rem; /* 800px */
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .experience-header {
-    flex-direction: column;
-    gap: var(--space-2);
+    flex-direction: row;
+    gap: var(--space-4);
   }
 }

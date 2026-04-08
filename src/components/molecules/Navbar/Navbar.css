@@ -17,7 +17,7 @@
 }
 
 .navbar-container {
-  max-width: 1200px;
+  max-width: 75rem; /* 1200px */
   margin: 0 auto;
   padding: 0 var(--space-6);
   display: flex;
@@ -70,7 +70,7 @@
 .btn-navbar-cta {
   background-color: var(--accent);
   color: white !important;
-  padding: 8px 18px;
+  padding: 0.5rem 1.125rem; /* 8px 18px */
   border-radius: var(--radius-md);
   font-size: var(--text-sm);
   font-weight: 700;
@@ -81,7 +81,7 @@
 
 .btn-navbar-cta:hover {
   background-color: var(--accent-hover);
-  transform: translateY(-2px);
+  transform: translateY(-0.125rem); /* 2px */
   box-shadow: 0 6px 20px rgba(59, 130, 246, 0.4);
 }
 
@@ -90,8 +90,8 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 24px;
-  height: 18px;
+  width: 1.5rem; /* 24px */
+  height: 1.125rem; /* 18px */
   background: transparent;
   border: none;
   cursor: pointer;
@@ -101,14 +101,14 @@
 .navbar-toggle span {
   display: block;
   width: 100%;
-  height: 2px;
+  height: 2px; /* Fixed detail */
   background-color: var(--primary);
   border-radius: 2px;
   transition: all 0.3s ease;
 }
 
 .navbar-toggle--open span:nth-child(1) {
-  transform: translateY(8px) rotate(45deg);
+  transform: translateY(0.5rem) rotate(45deg); /* 8px */
 }
 
 .navbar-toggle--open span:nth-child(2) {
@@ -116,7 +116,7 @@
 }
 
 .navbar-toggle--open span:nth-child(3) {
-  transform: translateY(-8px) rotate(-45deg);
+  transform: translateY(-0.5rem) rotate(-45deg); /* 8px */
 }
 
 /* Mobile Menu */

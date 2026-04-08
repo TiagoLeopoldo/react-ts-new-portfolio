@@ -1,0 +1,13 @@
+.text-atom {
+  line-height: 1.7;
+  margin: 0;
+}
+
+.text-atom--xs { font-size: var(--text-xs); }
+.text-atom--sm { font-size: var(--text-sm); }
+.text-atom--base { font-size: var(--text-base); }
+.text-atom--lg { font-size: var(--text-lg); }
+
+.text-atom--color-primary { color: var(--primary); }
+.text-atom--color-secondary { color: var(--secondary); }
+.text-atom--color-accent { color: var(--accent); }

@@ -49,7 +49,7 @@
       },
       {
         "id": "8",
-        "name": "styled-components",
+        "name": "Styled-components",
         "logo": "https://cdn.worldvectorlogo.com/logos/styled-components-1.svg"
       },
       {
@@ -93,18 +93,139 @@
     "projects": [
       {
         "id": "1",
+        "slug": "martspec",
         "name": "MartSpec LLC",
-        "img": "img-projects/martspec.png",
-        "description": "Desenvolvimento e manutenção do site da Martspec, empresa de produtos digitais que cria aplicações para Apple Watch. Atuei na implementação de conteúdo multilíngue com internacionalização, adaptação de layouts e melhorias visuais em colaboração com equipe de UX/UI, além de participar do fluxo de versionamento e code reviews em ambiente ágil.",
+        "img": "/img-projects/martspec.png",
+        "gallery": [
+          {
+            "src": "/img-projects/martspec1.png",
+            "alt": "Interface de monitoramento de medidas corporais"
+          },
+          {
+            "src": "/img-projects/martspec2.png",
+            "alt": "Página do rastreador de zinco com seletor i18n"
+          },
+          {
+            "src": "/img-projects/martspec3.png",
+            "alt": "Rodapé institucional e links de navegação"
+          }
+        ],
+        "description": "A MartSpec LLC é uma empresa de tecnologia voltada para saúde e bem-estar, especializada em aplicativos para Apple Watch. Como desenvolvedor front-end voluntário, atuei na manutenção e no aprimoramento de sua plataforma web, garantindo que o site acompanhasse a evolução dos produtos e suportasse novos requisitos globais.",
+        "longDescription": "A MartSpec LLC é uma empresa de tecnologia voltada para saúde e bem-estar, especializada em aplicativos para Apple Watch. Como desenvolvedor front-end voluntário, atuei na manutenção e no aprimoramento de sua plataforma web, garantindo que o site acompanhasse a evolução dos produtos e suportasse novos requisitos globais.",
+        "context": "O projeto consistia na manutenção contínua e evolução da plataforma vitrine da MartSpec. Minha atuação focou em atualizar a interface para refletir os novos lançamentos da marca, além de implementar melhorias estruturais necessárias para suportar a expansão internacional e garantir a consistência visual em diferentes dispositivos.",
+        "challenges": [
+          {
+            "title": "Internacionalização (i18n)",
+            "description": "Implementei a expansão do suporte para mais de 12 idiomas utilizando o padrão i18n, adaptando layouts existentes para garantir a integridade visual em diferentes variantes de texto."
+          },
+          {
+            "title": "Manutenção Adaptativa",
+            "description": "Refatorei componentes para garantir que as novas páginas de produtos mantivessem a alta fidelidade de design e total responsividade, seguindo os padrões de UI/UX da marca."
+          },
+          {
+            "title": "Fluxo de Trabalho Internacional",
+            "description": "Integração em equipe multidisciplinar via Slack, colaborando na resolução de débitos técnicos e implementação de melhorias em um ambiente com fusos horários variados."
+          }
+        ],
+        "architecture": {
+          "techStack": ["React", "TypeScript", "Bootstrap", "i18n"],
+          "description": "Manutenção baseada em Atomic Design, utilizando uma biblioteca de componentes modulares para facilitar a adição sustentável de novas landing pages e garantir a escalabilidade do código existente."
+        },
+        "features": [
+          {
+            "title": "Ecossistema de Landing Pages",
+            "description": "Páginas dedicadas para cada produto (Zinco, Ferro, Proteína, etc.), com layouts otimizados para apresentar benefícios e especificações técnicas de forma clara."
+          },
+          {
+            "title": "Localização Global",
+            "description": "Sistema de troca de idiomas via i18n que adapta toda a interface para usuários de diferentes países, mantendo a consistência da marca em larga escala."
+          },
+          {
+            "title": "Integração Apple Services",
+            "description": "Direcionamento inteligente para a App Store e destaque para a sincronização nativa com Apple Health e iCloud, reforçando a proposta de valor técnica da empresa."
+          },
+          {
+            "title": "Performance e SEO",
+            "description": "Interface leve e otimizada para carregamento rápido, focada em converter visitantes do site em usuários dos aplicativos móveis."
+          }
+        ],
         "repository": "n/a",
-        "deploy": "https://martspec.com/",
+        "deploy": "https://martspec.com",
         "github": false
       },
       {
         "id": "2",
+        "slug": "recolhe",
         "name": "Re.Colhe",
         "img": "/img-projects/recolhe.png",
-        "description": "Re.colhe é uma plataforma digital criada para conectar moradores e empresas a pontos de coleta de materiais recicláveis, incentivando práticas sustentáveis e facilitando o acesso a informações como endereço, contato e horário de funcionamento dos locais. O projeto nasceu em um ambiente colaborativo e multidisciplinar, com foco em impacto social e na promoção da economia circular. A plataforma oferece formas de login simuladas para diferentes perfis de usuário — Morador (MariaSouza@mail.com / 123456) ou Empresa (HenriqueMattos@mail.com / 123456) — permitindo experiências personalizadas e reforçando o propósito de engajamento comunitário.",
+        "gallery": [
+          {
+            "src": "/img-projects/recolhe1.png",
+            "alt": "Dashboard principal com visão do perfil do usuário logado"
+          },
+          {
+            "src": "/img-projects/recolhe2.png",
+            "alt": "Mapa interativo exibindo pontos de coleta geolocalizados"
+          }
+        ],
+        "description": "MVP focado em coleta seletiva e reciclagem, desenvolvido como TCC multidisciplinar no Estartando Devs e baseado nas ODS da ONU.",
+        "longDescription": "O Re.Colhe é uma plataforma informativa e operacional projetada para facilitar o descarte correto de resíduos, alinhada às metas de desenvolvimento sustentável (ODS) da ONU. Desenvolvido como TCC no programa Estartando Devs, o projeto simulou um ambiente real de produto, onde colaborei diariamente com equipes de UX/UI e Back-end. Atuei como desenvolvedor front-end no desenvolvimento ponta a ponta, implementando as funcionalidades principais e garantindo a integração entre o design mobile-first e a interface web.",
+        "context": "O projeto nasceu para enfrentar desafios de saúde pública e sustentabilidade urbana, combatendo o descarte indevido de resíduos através da tecnologia e da democratização do acesso à informação sobre logística reversa.",
+        "challenges": [
+          {
+            "title": "Visualização Espacial e Geoprocessamento",
+            "description": "O desafio técnico consistiu em integrar mapas interativos (Leaflet) em uma SPA React, garantindo alta performance na renderização de múltiplos marcadores e filtros geoespaciais em tempo real, sem comprometer o tempo de resposta da interface."
+          },
+          {
+            "title": "Arquitetura de Fluxo Multi-Perfil (B2C/B2B)",
+            "description": "Orquestrar jornadas de usuário distintas para 'Moradores' e 'Empresas' em uma base de código única. A solução envolveu lógica de estado persistente e renderização condicional complexa, garantindo que permissões e interfaces se adaptem dinamicamente ao perfil autenticado."
+          },
+          {
+            "title": "Responsividade Progressiva e UX Mobile-First",
+            "description": "Adaptar um conceito focado em mobilidade para uma experiência web completa. O desafio foi manter a usabilidade 'app-like' (com Footer Navigation e headers fixos) enquanto se expandia a ergonomia para telas desktop, utilizando um Design System resiliente e modular."
+          },
+          {
+            "title": "Gestão de Estado e Sincronização de Dados",
+            "description": "Centralizar a lógica de negócio e os fluxos de autenticação JWT em um estado global (Redux), permitindo que componentes distantes na árvore de renderização compartilhem informações críticas de forma síncrona e segura."
+          }
+        ],
+        "architecture": {
+          "techStack": [
+            "React",
+            "TypeScript",
+            "Redux",
+            "React Router",
+            "Axios",
+            "CSS3"
+          ],
+          "description": "Single Page Application (SPA) desenvolvida com React e TypeScript, focada em escalabilidade e manutenção. A arquitetura implementa roteamento dinâmico, gerenciamento de estado global com Redux e uma camada de serviços abstraída que alterna entre APIs REST e dados mockados, garantindo um ciclo de desenvolvimento ágil e princípios de Clean Code."
+        },
+        "features": [
+          {
+            "title": "Mapeamento Interativo de PEVs",
+            "description": "Geolocalização em tempo real de Pontos de Entrega Voluntária (PEVs) com filtros avançados por categoria de material, CEP ou endereço, utilizando integração com mapas interativos."
+          },
+          {
+            "title": "Ecossistema B2B para Parceiros",
+            "description": "Painel administrativo robusto que concede autonomia a empresas e cooperativas para gerenciarem seus pontos de descarte, horários de funcionamento e fluxo de coletas."
+          },
+          {
+            "title": "Hub de Engajamento e Fórum",
+            "description": "Espaço comunitário integrado para troca de experiências, dúvidas e colaboração entre usuários, incentivando a cultura de reciclagem e rede de apoio local."
+          },
+          {
+            "title": "Central de Educação Ambiental",
+            "description": "Base de conhecimento dinâmica com guias de descarte correto, dicas de sustentabilidade e informações sobre o ciclo de vida de resíduos sólidos."
+          },
+          {
+            "title": "Gestão de Favoritos e Notificações",
+            "description": "Personalização da experiência do usuário permitindo salvar pontos recorrentes e receber alertas em tempo real sobre status de solicitações e atualizações da rede."
+          },
+          {
+            "title": "Fluxo de Solicitação de Coleta",
+            "description": "Interface intuitiva para abertura de chamados de coleta, conectando diretamente o morador aos pontos de descarte ou cooperativas parceiras."
+          }
+        ],
         "repository": "https://github.com/TiagoLeopoldo/Re-Colhe-Frontend-TCC-2025",
         "deploy": "https://tiagoleopoldo.github.io/Re-Colhe-Frontend-TCC-2025/",
         "github": true

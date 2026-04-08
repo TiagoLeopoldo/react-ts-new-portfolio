@@ -1,0 +1,54 @@
+.button-atom {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-3) var(--space-8);
+  border-radius: var(--radius-md);
+  font-size: var(--text-sm);
+  font-weight: 700;
+  transition: all var(--transition-fast);
+  cursor: pointer;
+  border: none;
+  text-decoration: none;
+  font-family: var(--font-base);
+}
+
+/* Variants */
+.button-atom--primary {
+  background-color: var(--accent);
+  color: white !important;
+  box-shadow: 0 10px 20px -10px rgba(59, 130, 246, 0.5);
+}
+
+.button-atom--primary:hover {
+  background-color: var(--accent-hover);
+  transform: translateY(-0.125rem); /* 2px */
+  box-shadow: 0 15px 25px -10px rgba(59, 130, 246, 0.6);
+}
+
+.button-atom--secondary {
+  background-color: var(--surface);
+  color: var(--primary);
+  border: 1px solid var(--border);
+}
+
+.button-atom--secondary:hover {
+  background-color: var(--surface-hover);
+  border-color: var(--accent);
+  color: var(--accent);
+  transform: translateY(-0.125rem); /* 2px */
+}
+
+/* Ghost variant for Navbar toggle specifically if needed, 
+   but currently Navbar uses its own .navbar-toggle styles */
+.button-atom--ghost {
+  background: transparent;
+  padding: 0;
+  border-radius: 0;
+}
+
+@media (max-width: 768px) {
+  .button-atom {
+    padding: var(--space-3) var(--space-6);
+  }
+}
