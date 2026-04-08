@@ -7,7 +7,6 @@
 
 .section-title {
   font-size: var(--text-xs);
-  text-transform: uppercase;
   letter-spacing: 0.2rem;
   color: var(--accent);
   display: flex;
