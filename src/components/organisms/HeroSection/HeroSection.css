@@ -210,7 +210,7 @@
 @media (min-width: 1024px) {
   .hero {
     min-height: 85vh;
-    padding: var(--space-10) 0;
+    padding: var(--space-4) 0;
     justify-content: center;
     gap: var(--space-10);
   }
