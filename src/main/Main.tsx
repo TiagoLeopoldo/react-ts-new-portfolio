@@ -21,7 +21,7 @@ const Main = () => {
         <SkillsSection />
       </Section>
       <Section id="contact">
-        <Contact />
+        <Contact/>
       </Section>
     </main>
   )
