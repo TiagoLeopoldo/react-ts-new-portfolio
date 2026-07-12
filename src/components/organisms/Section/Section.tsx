@@ -3,7 +3,7 @@ import "./Section.css";
 import Title from "../../atoms/Title/Title";
 
 interface SectionProps {
-  id: string;
+  id?: string;
   title?: string;
   children: ReactNode;
 }

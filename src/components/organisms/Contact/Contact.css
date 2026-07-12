@@ -1,12 +1,17 @@
 .contact {
   background-color: var(--surface);
   border-radius: var(--radius-lg);
-  padding: var(--space-10) var(--space-6);
+  padding: var(--space-4) var(--space-1);
   text-align: center;
-  margin-top: var(--space-12);
+  margin-top: 0;
   border: 1px solid var(--border);
+  transition: all var(--transition-base);
   position: relative;
   overflow: hidden;
+}
+
+.contact:hover {
+  border-color: var(--accent);
 }
 
 .contact::before {
@@ -26,7 +31,7 @@
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  gap: var(--space-6);
+  gap: var(--space-2);
   position: relative;
   z-index: 2;
 }
@@ -54,9 +59,9 @@
 .btn-contact-primary {
   background-color: var(--accent);
   color: white !important;
-  padding: var(--space-4) var(--space-10);
+  padding: var(--space-4) var(--space-6);
   border-radius: var(--radius-md);
-  font-size: var(--text-base);
+  font-size: var(--text-lg);
   font-weight: 700;
   transition: all var(--transition-base);
   box-shadow: 0 15px 30px -10px rgba(59, 130, 246, 0.4);
