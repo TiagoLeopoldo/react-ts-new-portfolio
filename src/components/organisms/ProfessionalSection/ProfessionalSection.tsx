@@ -13,7 +13,6 @@ const ProfessionalSection = () => {
     const fetchExperiences = async () => {
       try {
         const data = await getProfessionalExperienceInfo();
-        console.log("Experiências profissionais carregadas:", data);
         setProfessionalInfo(data);
       } catch (error) {
         console.error("Erro ao carregar experiências profissionais:", error);
