@@ -14,11 +14,6 @@ const SkillsContent = () => {
     const fetchSkills = async () => {
       try {
         const data = await getSkillsInfo();
-
-        if (import.meta.env.DEV) {
-          console.log("Skills carregados:", data);
-        }
-
         if (isMounted) {
           setSkillsInfo(data);
         }
