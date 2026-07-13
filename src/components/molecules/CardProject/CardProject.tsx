@@ -3,10 +3,11 @@ import type { Project } from "../../../types/serviceTypes";
 import "./CardProject.css";
 
 interface CardProjectProps {
-  project: Project;
+  project: Project
+  className: string
 }
 
-const CardProject = ({ project }: CardProjectProps) => {
+const CardProject = ({ project, className }: CardProjectProps) => {
   const navigate = useNavigate();
 
   const handleCardClick = () => {
@@ -16,7 +17,7 @@ const CardProject = ({ project }: CardProjectProps) => {
   };
 
   return (
-    <li className="project-card clickable" onClick={handleCardClick}>
+    <li className={className} onClick={handleCardClick}>
       <div className="project-image">
         <img
           src={project.img}

@@ -1,87 +1,100 @@
-.project-card {
-  background: rgba(255, 255, 255, 0.03);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(59, 130, 246, 0.2);
-  border-radius: var(--radius-sm);
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  transition: all var(--transition-base);
-  position: relative;
+.project-card-one,
+.project-card-two {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(59, 130, 246, 0.2);
+    border-radius: var(--radius-sm);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    transition: all var(--transition-base);
+    position: relative;
 }
 
 .project-card.clickable {
-  cursor: pointer;
+    cursor: pointer;
 }
 
 .project-image {
-  position: relative;
-  width: 100%;
-  aspect-ratio: 16/9;
-  background-color: var(--border);
-  overflow: hidden;
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16/9;
+    background-color: var(--border);
+    overflow: hidden;
 }
 
 .project-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.5s ease;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
 }
 
 .project-card:hover .project-image img {
-  transform: scale(1.05);
+    transform: scale(1.05);
 }
 
 .project-content {
-  padding: var(--space-6);
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-5);
-  flex: 1;
+    padding: var(--space-6);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-5);
+    flex: 1;
 }
 
 .project-card h3 {
-  font-size: var(--text-xl);
-  color: var(--primary);
-  line-height: 1.2;
+    font-size: var(--text-xl);
+    color: var(--primary);
+    line-height: 1.2;
 }
 
 .project-card p {
-  font-size: var(--text-sm);
-  line-height: 1.6;
-  color: var(--secondary);
+    font-size: var(--text-sm);
+    line-height: 1.6;
+    color: var(--secondary);
 }
-
 
 .project-actions {
-  margin: 2rem;
-  display: flex;
-  gap: var(--space-3);
-  margin-top: auto;
+    margin: 2rem;
+    display: flex;
+    gap: var(--space-3);
+    margin-top: auto;
 }
 
-
 @media (hover: hover) and (pointer: fine) {
-  .btn-deploy:hover {
-    background-color: var(--accent-hover);
-    transform: translateY(-0.125rem); /* 2px */
-  }
-  
-  .btn-repo:hover {
-    background-color: var(--surface-hover);
-    border-color: var(--accent);
-    color: var(--accent);
-    transform: translateY(-0.125rem); /* 2px */
-  }
+    .btn-deploy:hover {
+        background-color: var(--accent-hover);
+        transform: translateY(-0.125rem); /* 2px */
+    }
+
+    .btn-repo:hover {
+        background-color: var(--surface-hover);
+        border-color: var(--accent);
+        color: var(--accent);
+        transform: translateY(-0.125rem); /* 2px */
+    }
 }
 
 @media (min-width: 768px) {
-  .project-card:hover {
-    transform: translateY(-0.5rem); /* 8px */
-    background: rgba(255, 255, 255, 0.06);
-    border: 2px solid var(--accent);
-    box-shadow: 0 10px 30px -15px rgba(59, 130, 246, 0.2);
-  }
+    .project-card-one {
+        flex-direction: row-reverse;
+    }
+
+    .project-card-two {
+        flex-direction: row;
+    }
+
+    .project-card-one:hover,
+    .project-card-two:hover {
+        transform: translateY(-0.5rem); /* 8px */
+        background: rgba(255, 255, 255, 0.06);
+        border: 2px solid var(--accent);
+        box-shadow: 0 10px 30px -15px rgba(59, 130, 246, 0.2);
+    }
+
+    .project-image {
+        width: 45%;
+        aspect-ratio: 2;
+    }
 }
