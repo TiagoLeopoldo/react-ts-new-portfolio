@@ -37,7 +37,7 @@ const ProjectSection = () => {
       {projectsInfo ?
         <ul className="projects-grid">
           {projectsInfo?.projects?.map((project) => {
-            return <CardProject key={project.id} project={project} />
+            return <CardProject key={project.id} project={project} className={parseInt(project.id) % 2 === 0 ? "project-card-two clickable" : "project-card-one clickable"}/>
           })}
         </ul>
         :
